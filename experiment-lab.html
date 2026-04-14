@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Routes | Experiment Lab</title>
+    <meta name="description" content="Interactive page for testing experiment behaviors." />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="engine.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="lab">
+    <div class="site-shell">
+      <header class="page-header page-header--lab">
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="index.html">Wild Routes</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+          <div class="nav-links" id="site-nav">
+            <a href="index.html" data-route="home">Home</a>
+            <a href="animals.html" data-route="animals">Animals</a>
+            <a href="habitats.html" data-route="habitats">Habitats</a>
+            <a href="adoption.html" data-route="adoption">Adoption</a>
+            <a href="experiment-lab.html" data-route="lab">Experiment Lab</a>
+          </div>
+        </nav>
+        <div class="container page-header__content">
+          <p class="eyebrow">Route: Experiment Lab</p>
+          <h1>Interactive controls for quick proof-of-concept tests.</h1>
+          <p class="lede">
+            The buttons below change page copy and log lightweight events, which makes this route useful for
+            validating integrations.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--light">
+          <div class="container grid grid--2">
+            <article class="feature-card">
+              <p class="tag">Variant simulator</p>
+              <h2 id="lab-headline">Default message: Protect more habitats with every click.</h2>
+              <p id="lab-copy">
+                Use the controls to simulate variant changes without editing the page structure.
+              </p>
+              <div class="button-row">
+                <button class="button button--solid" type="button" data-variant="control">Control</button>
+                <button class="button button--ghost" type="button" data-variant="variant-a">Variant A</button>
+                <button class="button button--ghost" type="button" data-variant="variant-b">Variant B</button>
+              </div>
+            </article>
+            <article class="feature-card feature-card--accent">
+              <p class="tag">Event feed</p>
+              <h2>Lightweight interaction log</h2>
+              <ul class="event-log" id="event-log">
+                <li>Waiting for interaction...</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Common Test Targets</p>
+              <h2>Buttons and blocks that are easy to target with selectors.</h2>
+            </div>
+            <div class="card-grid">
+              <article class="route-card route-card--static">
+                <h3>Hero headline</h3>
+                <p>Swap text or change emphasis.</p>
+              </article>
+              <article class="route-card route-card--static">
+                <h3>CTA color</h3>
+                <p>Test contrast and click behavior.</p>
+              </article>
+              <article class="route-card route-card--static">
+                <h3>Offer order</h3>
+                <p>Rearrange content blocks by route.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Wild Routes test site</p>
+          <p>Experiment Lab route</p>
+          <p>&copy; <span id="year"></span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

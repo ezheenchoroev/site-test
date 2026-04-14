@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Routes | Home</title>
+    <meta
+      name="description"
+      content="A simple multi-page animal site for testing Kameleoon experiments and engine.js integrations."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="engine.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="hero hero-home">
+        <div class="hero__glow"></div>
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="index.html">Wild Routes</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+          <div class="nav-links" id="site-nav">
+            <a href="index.html" data-route="home">Home</a>
+            <a href="animals.html" data-route="animals">Animals</a>
+            <a href="habitats.html" data-route="habitats">Habitats</a>
+            <a href="adoption.html" data-route="adoption">Adoption</a>
+            <a href="experiment-lab.html" data-route="lab">Experiment Lab</a>
+          </div>
+        </nav>
+
+        <section class="hero__content container">
+          <p class="eyebrow">Simple Routing Demo</p>
+          <h1>Explore an animal site built for quick experiment setup.</h1>
+          <p class="lede">
+            Each page has distinct layouts, buttons, and content blocks so you can test copy changes,
+            banners, selectors, route-specific scripts, and Kameleoon experiments.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--solid" href="animals.html" id="primary-cta">Browse animals</a>
+            <a class="button button--ghost" href="experiment-lab.html">Open experiment lab</a>
+          </div>
+          <div class="metric-strip" aria-label="Demo metrics">
+            <article>
+              <strong>5</strong>
+              <span>Routes</span>
+            </article>
+            <article>
+              <strong>12</strong>
+              <span>Targetable cards</span>
+            </article>
+            <article>
+              <strong>1</strong>
+              <span>`engine.js` placeholder</span>
+            </article>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section section--light">
+          <div class="container grid grid--2">
+            <article class="feature-card" data-test-block="promo-banner">
+              <p class="tag">Testing surface</p>
+              <h2>Homepage promo block</h2>
+              <p>
+                This section is a good place to test headline swaps, CTA color changes, or show-hide
+                experiments.
+              </p>
+              <a class="inline-link" href="adoption.html">See adoption offers</a>
+            </article>
+            <article class="feature-card feature-card--accent">
+              <p class="tag">Ready for variants</p>
+              <h2>Stable selectors</h2>
+              <p>
+                Buttons, cards, filters, and hero sections use readable classes and IDs so they are easy
+                to target from experimentation tools.
+              </p>
+              <ul class="check-list">
+                <li>Distinct page body attributes</li>
+                <li>Simple route names</li>
+                <li>Shared JS loaded everywhere</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Quick Links</p>
+              <h2>Use each route for a different type of test.</h2>
+            </div>
+            <div class="card-grid">
+              <a class="route-card" href="animals.html">
+                <span class="route-card__index">01</span>
+                <h3>Animals</h3>
+                <p>Card grids, filters, badges, and content-heavy layouts.</p>
+              </a>
+              <a class="route-card" href="habitats.html">
+                <span class="route-card__index">02</span>
+                <h3>Habitats</h3>
+                <p>Section links, environmental storytelling, and stat blocks.</p>
+              </a>
+              <a class="route-card" href="adoption.html">
+                <span class="route-card__index">03</span>
+                <h3>Adoption</h3>
+                <p>Pricing-style comparison cards and form controls.</p>
+              </a>
+              <a class="route-card" href="experiment-lab.html">
+                <span class="route-card__index">04</span>
+                <h3>Experiment Lab</h3>
+                <p>Buttons, variants, and a minimal event log you can repurpose.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Wild Routes test site</p>
+          <p>Built for GitHub Pages and Kameleoon experiments</p>
+          <p>&copy; <span id="year"></span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

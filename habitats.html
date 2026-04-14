@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Routes | Habitats</title>
+    <meta name="description" content="Habitat sections and stat blocks for experiment testing." />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="engine.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="habitats">
+    <div class="site-shell">
+      <header class="page-header page-header--habitats">
+        <nav class="topbar" aria-label="Primary">
+          <a class="brand" href="index.html">Wild Routes</a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            Menu
+          </button>
+          <div class="nav-links" id="site-nav">
+            <a href="index.html" data-route="home">Home</a>
+            <a href="animals.html" data-route="animals">Animals</a>
+            <a href="habitats.html" data-route="habitats">Habitats</a>
+            <a href="adoption.html" data-route="adoption">Adoption</a>
+            <a href="experiment-lab.html" data-route="lab">Experiment Lab</a>
+          </div>
+        </nav>
+        <div class="container page-header__content">
+          <p class="eyebrow">Route: Habitats</p>
+          <h1>Story sections with anchor navigation.</h1>
+          <p class="lede">
+            This route is useful for sticky-nav, anchor-link, and section-reorder experiments.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--light">
+          <div class="container">
+            <div class="jump-links">
+              <a href="#forest-zone">Forest</a>
+              <a href="#ocean-zone">Ocean</a>
+              <a href="#desert-zone">Desert</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section habitat-section" id="forest-zone">
+          <div class="container grid grid--2">
+            <div>
+              <p class="eyebrow">Forest Zone</p>
+              <h2>Dense canopy, soft light, fast movement.</h2>
+              <p>
+                Forest habitats offer rich content blocks for copy tests, section swaps, and sidebar
+                experiments. This layout is intentionally readable and easy to manipulate.
+              </p>
+            </div>
+            <aside class="stat-panel">
+              <strong>67%</strong>
+              <span>of visitors click anchor links when sections are visible above the fold</span>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section--light habitat-section" id="ocean-zone">
+          <div class="container grid grid--2">
+            <div>
+              <p class="eyebrow">Ocean Zone</p>
+              <h2>Open space, layered gradients, and long-form content.</h2>
+              <p>
+                Use this section for testing visual hierarchy, spacing adjustments, and image placement
+                ideas without introducing a framework.
+              </p>
+            </div>
+            <aside class="stat-panel stat-panel--alt">
+              <strong>3</strong>
+              <span>sections arranged for anchor-link and scroll-depth tracking</span>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section habitat-section" id="desert-zone">
+          <div class="container grid grid--2">
+            <div>
+              <p class="eyebrow">Desert Zone</p>
+              <h2>Minimal visuals with strong CTA contrast.</h2>
+              <p>
+                Desert layouts are useful when you want sharper contrast between message blocks and calls to
+                action.
+              </p>
+              <a class="button button--solid" href="experiment-lab.html">Test CTA changes</a>
+            </div>
+            <aside class="stat-panel">
+              <strong>24s</strong>
+              <span>average reading time on this section in a typical demo flow</span>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Wild Routes test site</p>
+          <p>Habitats route</p>
+          <p>&copy; <span id="year"></span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
