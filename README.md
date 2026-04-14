@@ -1,6 +1,6 @@
 # Wild Routes
 
-Simple static multi-page website for testing `engine.js` integrations and Kameleoon experiments.
+Simple static multi-page website for testing Kameleoon experiments.
 
 ## Routes
 
@@ -14,8 +14,8 @@ Simple static multi-page website for testing `engine.js` integrations and Kamele
 All pages load:
 
 - `styles.css`
-- `engine.js`
 - `app.js`
+- the Kameleoon bootstrap snippet inline at the top of `<head>`
 
 ## Local preview
 
@@ -27,18 +27,11 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## Replace the placeholder engine
+## Kameleoon setup
 
-Every page already loads `engine.js`:
+Every page already includes the Kameleoon bootstrap code directly after the opening `<head>` tag.
 
-```html
-<script defer src="engine.js"></script>
-```
-
-You can either:
-
-1. Replace the contents of `engine.js` with your own script.
-2. Change that script tag on each page to your hosted Kameleoon `engine.js` URL.
+If Kameleoon gives you a new snippet later, replace that inline snippet on each HTML page.
 
 ## GitHub setup
 
