@@ -15,7 +15,7 @@ All pages load:
 
 - `styles.css`
 - `app.js`
-- the Kameleoon bootstrap snippet inline at the top of `<head>`
+- `kameleoon.js`
 
 ## Local preview
 
@@ -29,9 +29,9 @@ Then open `http://localhost:8080`.
 
 ## Kameleoon setup
 
-Every page already includes the Kameleoon bootstrap code directly after the opening `<head>` tag.
+Every page loads the shared `kameleoon.js` file directly after the opening `<head>` tag.
 
-If Kameleoon gives you a new snippet later, replace that inline snippet on each HTML page.
+If Kameleoon gives you a new snippet later, update `kameleoon.js` once and the change will apply to every page.
 
 ## GitHub setup
 
