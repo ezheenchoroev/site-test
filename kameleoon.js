@@ -33,7 +33,7 @@ if (!document.getElementById("kameleoonLoadingStyleSheet") && !window.kameleoonD
 
 var kameleoonScript = document.createElement("script");
 kameleoonScript.type = "text/javascript";
-kameleoonScript.src = "//675nqkgcoe.experimentation.workforce.dev.principal.com/kameleoon.js"; // dev
+kameleoonScript.src = "//bhi3dy5clr.experimentation.workforce.dev.principal.com/kameleoon.js"; // dev
 // kameleoonScript.src = "//dddja6qs8f.kameleoon.brightspot.com/kameleoon.js";
 kameleoonScript.async = true;
 kameleoonScript.setAttribute("fetchpriority", "high");
